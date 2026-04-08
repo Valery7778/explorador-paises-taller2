@@ -1,16 +1,24 @@
-# React + Vite
+# 🌍 Explorador de Países
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React que consume la API REST Countries.
+Permite buscar países por nombre y filtrar por continente.
 
-Currently, two official plugins are available:
+## 🔗 API utilizada
+REST Countries - https://restcountries.com/v3.1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Endpoints usados
+- Todos los países: https://restcountries.com/v3.1/all
+- Buscar por nombre: https://restcountries.com/v3.1/name/{nombre}
 
-## React Compiler
+## ✅ Funcionalidades
+- Búsqueda de países por nombre
+- Filtro por continente
+- Estado de carga mientras llegan los datos
+- Manejo de errores si no encuentra el país
+- Hook personalizado useFetch
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ▶️ ¿Cómo correr el proyecto?
+1. Clonar el repositorio
+2. Instalar dependencias con: npm install
+3. Correr el proyecto con: npm run dev
+4. Abrir en el navegador: http://localhost:5173
