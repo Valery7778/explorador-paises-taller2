@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #5a748f;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f1f3f5;
+}
+
+.contenedor {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.controles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 10px 16px;
+  border: 2px solid #091420;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 280px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #4299e1;
+}
+
+select {
+  padding: 10px 16px;
+  border: 2px solid #091420;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+select:focus {
+  border-color: #4299e1;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 100px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.tarjeta h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #2d3748;
+}
+
+.tarjeta p {
+  font-size: 0.85rem;
+  color: #718096;
+  margin: 4px 0;
+}
+
+.cargando {
+  font-size: 1.2rem;
+  color: #4299e1;
+  margin-top: 20px;
+}
+
+.error {
+  font-size: 1.2rem;
+  color: #580b0b;
+  margin-top: 20px;
+}
